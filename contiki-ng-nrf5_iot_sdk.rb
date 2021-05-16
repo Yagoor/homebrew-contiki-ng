@@ -13,7 +13,7 @@ class ContikiNgNrf5IotSdk < Formula
 
   def caveats
     <<~EOS
-      You must the following to your .bash_profile:
+      You must add the following to your .bash_profile:
         export NRF52_SDK_ROOT=#{opt_libexec}
     EOS
   end    
