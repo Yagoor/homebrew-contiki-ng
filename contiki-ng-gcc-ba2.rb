@@ -4,6 +4,7 @@ class ContikiNgGccBa2 < Formula
   desc "GNU binary tools for BA2"
   url "https://raw.githubusercontent.com/Yagoor/homebrew-contiki-ng/main/resources/gcc-4.7.4-ba-r36379.tar.xz"
   sha256 "8823b9976dcd589e5ed77a5572424a637d1bfee20a47f3ad96f665fb66571b19"
+  revision "2"
 
   depends_on "contiki-ng-binutils-ba2"
 
@@ -81,7 +82,6 @@ class ContikiNgGccBa2 < Formula
         "--disable-werror",
         "--with-mpfr-include=#{buildpath}/mpfr/src",
         "--with-mpfr-lib=#{buildpath}/build/mpfr/src/.libs"
-
       system "make"
       system "make", "install"
     end
